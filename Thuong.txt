@@ -1,3 +1,290 @@
-Hi
-Who a u?
-I'm Thuong.
+
+Thuong NTD@THUONG  ~/Documents/GitHub
+$ ls
+GMO_RS/  GMO-DaoTao/  Java/  thuongnnt.github.io/
+
+Thuong NTD@THUONG  ~/Documents/GitHub
+$ git config --global user.name "ThuongNTD"
+
+Thuong NTD@THUONG  ~/Documents/GitHub
+$ git config --global user.email "13520863@gm.uit.edu.vn"
+
+Thuong NTD@THUONG  ~/Documents/GitHub
+$ git clone http://github.com/thuongnnt/Documents.git
+Cloning into 'Documents'...
+remote: Repository not found.
+fatal: repository 'https://github.com/thuongnnt/Documents.git/' not found
+
+Thuong NTD@THUONG  ~/Documents/GitHub
+$ git clone http://github.com/thuongnnt/Documents
+Cloning into 'Documents'...
+remote: Repository not found.
+fatal: repository 'https://github.com/thuongnnt/Documents/' not found
+
+Thuong NTD@THUONG  ~/Documents/GitHub
+$ git clone https://github.com/thuongnnt/Documents.git
+Cloning into 'Documents'...
+remote: Repository not found.
+fatal: repository 'https://github.com/thuongnnt/Documents.git/' not found
+
+Thuong NTD@THUONG  ~/Documents/GitHub
+$ git clone https://github.com/thuongnnt/Documents
+Cloning into 'Documents'...
+remote: Repository not found.
+fatal: repository 'https://github.com/thuongnnt/Documents/' not found
+
+Thuong NTD@THUONG  ~/Documents/GitHub
+$ cd Documents
+
+Thuong NTD@THUONG  ~/Documents/GitHub/Documents (master)
+$ git add .
+
+Thuong NTD@THUONG  ~/Documents/GitHub/Documents (master)
+$ git commit -m "Them mot so tap tin moi"
+[master a87458a] Them mot so tap tin moi
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 De-Thi-01.doc
+ create mode 100644 bai_tap_cd_lthdt_c.pdf
+ create mode 100644 oh hay.png
+
+Thuong NTD@THUONG  ~/Documents/GitHub/Documents (master)
+$ git tag Thuong.v01
+
+Thuong NTD@THUONG  ~/Documents/GitHub/Documents (master)
+$ git push origin master
+Counting objects: 5, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 368.64 KiB | 0 bytes/s, done.
+Total 5 (delta 0), reused 0 (delta 0)
+To https://github.com/thuongntt/Documents.git
+   812530c..a87458a  master -> master
+
+Thuong NTD@THUONG  ~/Documents/GitHub/Documents (master)
+$ git push origin Thuong.v01
+Total 0 (delta 0), reused 0 (delta 0)
+To https://github.com/thuongntt/Documents.git
+ * [new tag]         Thuong.v01 -> Thuong.v01
+
+Thuong NTD@THUONG  ~/Documents/GitHub/Documents (master)
+$ git pull
+error: cannot lock ref 'refs/remotes/origin/master': is at 654279bb5b59923a8b354f04295ec087e30f063a but expected a87458a8d534fe02e51846692ea735c79b19a2bf
+From https://github.com/thuongntt/Documents
+ ! a87458a..654279b  master     -> origin/master  (unable to update local ref)
+
+Thuong NTD@THUONG  ~/Documents/GitHub/Documents (master)
+$ git pull
+Updating a87458a..654279b
+Fast-forward
+ Taptinmoi | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 Taptinmoi
+
+Thuong NTD@THUONG  ~/Documents/GitHub/Documents (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working tree clean
+
+Thuong NTD@THUONG  ~/Documents/GitHub/Documents (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working tree clean
+
+Thuong NTD@THUONG  ~/Documents/GitHub/Documents (master)
+$ cd ..
+
+Thuong NTD@THUONG  ~/Documents/GitHub
+$ git status
+fatal: Not a git repository (or any of the parent directories): .git
+
+Thuong NTD@THUONG  ~/Documents/GitHub
+$ cd Documents
+
+Thuong NTD@THUONG  ~/Documents/GitHub/Documents (master)
+$ ls
+bai_tap_cd_lthdt_c.pdf  'oh hay.png'  Taptinmoi
+De-Thi-01.doc           README.md     Thuong.txt
+
+Thuong NTD@THUONG  ~/Documents/GitHub/Documents (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        Thuong.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Thuong NTD@THUONG  ~/Documents/GitHub/Documents (master)
+$ git add Thuong.txt
+
+Thuong NTD@THUONG  ~/Documents/GitHub/Documents (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   Thuong.txt
+
+
+Thuong NTD@THUONG  ~/Documents/GitHub/Documents (master)
+$ git commit -m"Add new file Thuong.txt"
+[master 8222b26] Add new file Thuong.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Thuong.txt
+
+Thuong NTD@THUONG  ~/Documents/GitHub/Documents (master)
+$ git push
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 279 bytes | 0 bytes/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local objects.
+To https://github.com/thuongntt/Documents.git
+   654279b..8222b26  master -> master
+
+Thuong NTD@THUONG  ~/Documents/GitHub/Documents (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   Thuong.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Thuong NTD@THUONG  ~/Documents/GitHub/Documents (master)
+$ git add Thuong.txt
+
+Thuong NTD@THUONG  ~/Documents/GitHub/Documents (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   Thuong.txt
+
+
+Thuong NTD@THUONG  ~/Documents/GitHub/Documents (master)
+$ git commit -m"Change file Thuong.txt"
+[master 9a8afd4] Change file Thuong.txt
+ 1 file changed, 1 insertion(+)
+
+Thuong NTD@THUONG  ~/Documents/GitHub/Documents (master)
+$ git push
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 268 bytes | 0 bytes/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local objects.
+To https://github.com/thuongntt/Documents.git
+   8222b26..9a8afd4  master -> master
+
+Thuong NTD@THUONG  ~/Documents/GitHub/Documents (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   Thuong.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Thuong NTD@THUONG  ~/Documents/GitHub/Documents (master)
+$ git add Thuong.txt
+
+Thuong NTD@THUONG  ~/Documents/GitHub/Documents (master)
+$ git commit -m"Change file v1"
+[master ff0c90f] Change file v1
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+Thuong NTD@THUONG  ~/Documents/GitHub/Documents (master)
+$ git push
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 281 bytes | 0 bytes/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local objects.
+To https://github.com/thuongntt/Documents.git
+   9a8afd4..ff0c90f  master -> master
+
+Thuong NTD@THUONG  ~/Documents/GitHub/Documents (master)
+$ git log
+commit ff0c90fa1b2aea87507eb7de3b6b6b61780f609a
+Author: ThuongNTD <13520863@gm.uit.edu.vn>
+Date:   Sat Mar 4 23:28:56 2017 +0700
+
+    Change file v1
+
+commit 9a8afd4ddc5517a397e38c4e25ad81d820500f96
+Author: ThuongNTD <13520863@gm.uit.edu.vn>
+Date:   Sat Mar 4 23:25:47 2017 +0700
+
+    Change file Thuong.txt
+
+commit 8222b267fe9fe6ca00888d819f995e5ae625ba92
+Author: ThuongNTD <13520863@gm.uit.edu.vn>
+Date:   Sat Mar 4 23:19:47 2017 +0700
+
+    Add new file Thuong.txt
+
+commit 654279bb5b59923a8b354f04295ec087e30f063a
+Author: thuongntt <13520863@gm.uit.edu.vn>
+Date:   Sat Mar 4 23:04:29 2017 +0700
+
+    Tao moi Taptinmoi.txt
+:
+
+Thuong NTD@THUONG  ~/Documents/GitHub/Documents (master)
+$ git revert ff0c90fa1b2aea87507eb7de3b6b6b61780f609a
+[master f06ab3e] Revert "Change file v1"
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+
+Thuong NTD@THUONG  ~/Documents/GitHub/Documents (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+nothing to commit, working tree clean
+
+Thuong NTD@THUONG  ~/Documents/GitHub/Documents (master)
+$ git push
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 290 bytes | 0 bytes/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local objects.
+To https://github.com/thuongntt/Documents.git
+   ff0c90f..f06ab3e  master -> master
+
+Thuong NTD@THUONG  ~/Documents/GitHub/Documents (master)
+$ ^C
+
+Thuong NTD@THUONG  ~/Documents/GitHub/Documents (master)
+$ git pull
+remote: Counting objects: 3, done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/thuongntt/Documents
+   f06ab3e..f84bca7  master     -> origin/master
+Updating f06ab3e..f84bca7
+Fast-forward
+ Thuong.txt | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+Thuong NTD@THUONG  ~/Documents/GitHub/Documents (master)
+$
